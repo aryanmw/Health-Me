@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#eeeded"
+    tools:context=".history">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/workout_background">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THURSDAY WORKOUT"
+            android:textSize="28dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:textStyle="bold"
+            android:text="Name"
+            android:layout_weight="25"
+            android:layout_marginTop="35dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="35dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:text="Sets"
+            android:layout_weight="38"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:layout_marginTop="35dp"
+            android:text="Reps"
+            android:textStyle="bold"
+            android:layout_weight="38"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <ListView
+        android:padding="30dp"
+        android:id="@+id/MonListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

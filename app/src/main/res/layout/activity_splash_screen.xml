@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="#EEEDED">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/health_logo"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:id="@+id/iv_logo"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/tv_appName"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="#181F42"
+        android:layout_below="@id/iv_logo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/comfortaa_bold"/>
+
+</RelativeLayout>

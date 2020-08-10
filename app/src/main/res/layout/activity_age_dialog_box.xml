@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#eeeded">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alegreya_sans_bold"
+            android:text="Age"
+            android:textColor="#181F42"
+            android:textSize="24dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="174dp"
+        android:layout_toRightOf="@id/np_step_target_dialog_box"
+        android:fontFamily="@font/alegreya_sans_bold"
+        android:text="years"
+        android:textColor="#181F42"
+        android:textSize="20dp" />
+    <NumberPicker
+        android:id="@+id/np_step_target_dialog_box"
+        android:layout_width="120dp"
+        android:theme="@style/AppTheme.Picker"
+        android:solidColor="#36373B"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+
+
+
+</RelativeLayout>
