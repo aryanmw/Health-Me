@@ -36,16 +36,16 @@ public class DayAdapter extends ArrayAdapter<WorkoutCheckedList> {
 
             if (tv_name!=null){
                 tv_name.setText(wcl.getWorkoutName());
-                tv_name.setTextColor(Color.parseColor("#FFFFFF"));
+                //tv_name.setTextColor(Color.parseColor("#FFFFFF"));
             }
             if (tv_sets!=null){
                 tv_sets.setText("     " +wcl.getWorkoutSets());
-                tv_sets.setTextColor(Color.parseColor("#FFFFFF"));
+                //tv_sets.setTextColor(Color.parseColor("#FFFFFF"));
 
             }
             if (tv_reps!=null){
                 tv_reps.setText("     "+ wcl.getWorkoutReps());
-                tv_reps.setTextColor(Color.parseColor("#FFFFFF"));
+                //tv_reps.setTextColor(Color.parseColor("#FFFFFF"));
 
             }
 

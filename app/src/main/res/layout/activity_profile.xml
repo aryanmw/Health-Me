@@ -338,15 +338,7 @@
 
                     </RelativeLayout>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Did you know that what you eat is more important than how much you workout!! "
-                        android:textColor="#5000ca"
-                        android:fontFamily="@font/alegreya_sans_bold"
-                        android:textSize="20dp"
-                        android:layout_below="@id/gv"
-                        android:layout_marginTop="20dp"/>
+
 
 
 
