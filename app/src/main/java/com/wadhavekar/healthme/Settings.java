@@ -1,6 +1,5 @@
 package com.wadhavekar.healthme;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,6 +13,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.wadhavekar.healthme.DialogBoxes.AgeDialogBox;
+import com.wadhavekar.healthme.DialogBoxes.HeightDialogBox;
+import com.wadhavekar.healthme.DialogBoxes.SetupDialogBoxListener;
+import com.wadhavekar.healthme.DialogBoxes.StepTargetDialogBox;
+import com.wadhavekar.healthme.DialogBoxes.TargetDialogBox;
+import com.wadhavekar.healthme.Pedometer.ped;
 
 public class Settings extends AppCompatActivity implements SetupDialogBoxListener {
     RelativeLayout height,target,age,steps;
@@ -111,7 +116,7 @@ public class Settings extends AppCompatActivity implements SetupDialogBoxListene
                     break;
 
                 case R.id.nav_pedometer:
-                    Intent intent3 = new Intent(Settings.this,ped.class);
+                    Intent intent3 = new Intent(Settings.this, ped.class);
                     startActivity(intent3);
                     break;
             }

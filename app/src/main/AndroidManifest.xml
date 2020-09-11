@@ -23,17 +23,14 @@
         <activity android:name=".Welcome"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"></activity>
-        <activity android:name=".AgeDialogBox" />
-        <activity android:name=".StepTargetDialogBox" />
+        <activity android:name=".DialogBoxes.AgeDialogBox" />
+        <activity android:name=".DialogBoxes.StepTargetDialogBox" />
         <activity
             android:name=".Settings"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".Pedometer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".ped"
+            android:name=".Pedometer.ped"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
@@ -45,52 +42,52 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".DaySaturdayWorkout"
+            android:name=".Days.DaySaturdayWorkout"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".DayFridayWorkout"
+            android:name=".Days.DayFridayWorkout"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".DayThursdayWorkout"
+            android:name=".Days.DayThursdayWorkout"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".DayWednesdayWorkout"
+            android:name=".Days.DayWednesdayWorkout"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".DayMondayWorkout"
+            android:name=".Days.DayMondayWorkout"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".Cardio"
+            android:name=".WorkoutPackage.Cardio"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".UpperBody"
+            android:name=".WorkoutPackage.UpperBody"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".Legs"
+            android:name=".WorkoutPackage.Legs"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".Abs"
+            android:name=".WorkoutPackage.Abs"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".DayTuesdayWorkout"
+            android:name=".Days.DayTuesdayWorkout"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
         <activity
-            android:name=".Workout"
+            android:name=".WorkoutPackage.Workout"
             android:theme="@style/AppTheme.NoActionBar"
             android:noHistory="true"/>
-        <activity android:name=".WorkoutDialogBox" />
+        <activity android:name=".WorkoutPackage.WorkoutDialogBox" />
         <activity
-            android:name=".Chest"
+            android:name=".WorkoutPackage.Chest"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".history"
@@ -114,9 +111,6 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Tracking"
-            android:label="@string/title_activity_tracking" />
-        <activity
             android:name=".SplashScreen"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -131,7 +125,7 @@
             android:resource="@array/preloaded_fonts" />
 
         <receiver
-            android:name=".MyService"
+            android:name=".Pedometer.MyService"
             android:enabled="true"
             android:exported="true" />
     </application>

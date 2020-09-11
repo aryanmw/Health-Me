@@ -26,6 +26,10 @@ import com.jjoe64.graphview.DefaultLabelFormatter;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.series.DataPoint;
 import com.jjoe64.graphview.series.LineGraphSeries;
+import com.wadhavekar.healthme.DialogBoxes.DialogBox;
+import com.wadhavekar.healthme.DialogBoxes.DialogBoxListener;
+import com.wadhavekar.healthme.DialogBoxes.HeightDialogBox;
+import com.wadhavekar.healthme.Pedometer.ped;
 
 import java.text.DateFormat;
 import java.text.DecimalFormat;
@@ -220,7 +224,7 @@ public class Profile extends AppCompatActivity implements DialogBoxListener, Nav
                     break;
 
                 case R.id.nav_pedometer:
-                    Intent intent2 = new Intent(Profile.this,ped.class);
+                    Intent intent2 = new Intent(Profile.this, ped.class);
                     startActivity(intent2);
                     break;
 

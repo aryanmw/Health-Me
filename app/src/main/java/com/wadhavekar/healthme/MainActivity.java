@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.GridLayout;
 
+import com.wadhavekar.healthme.WorkoutPackage.Workout;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     if (finalI == 1){
-                        Intent intent = new Intent (MainActivity.this,Workout.class);
+                        Intent intent = new Intent (MainActivity.this, Workout.class);
                         startActivity(intent);
                     }
                     else if(finalI == 0){

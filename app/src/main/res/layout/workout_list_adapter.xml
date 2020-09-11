@@ -25,9 +25,9 @@
             android:inputType="number"
             android:digits="0123456789"
             android:layout_weight="50"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#000000"
             android:id="@+id/et_sets"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#000000"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -38,9 +38,9 @@
             android:layout_weight="50"
             android:inputType="number"
             android:digits="0123456789"
-            android:backgroundTint="#FFFFFF"
+            android:backgroundTint="#000000"
             android:id="@+id/et_reps"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#000000"/>
 
 
     </LinearLayout>

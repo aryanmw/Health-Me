@@ -1,6 +1,5 @@
 package com.wadhavekar.healthme;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,6 +12,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.wadhavekar.healthme.Pedometer.ped;
 
 import java.util.ArrayList;
 
@@ -59,7 +59,7 @@ public class history extends AppCompatActivity {
                     break;
 
                 case R.id.nav_pedometer:
-                    Intent intent2 = new Intent(history.this,ped.class);
+                    Intent intent2 = new Intent(history.this, ped.class);
                     startActivity(intent2);
                     break;
 

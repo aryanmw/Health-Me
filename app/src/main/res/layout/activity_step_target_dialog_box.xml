@@ -33,7 +33,7 @@
         android:id="@+id/np_step_target_dialog_box"
         android:layout_width="120dp"
         android:theme="@style/AppTheme.Picker"
-        android:solidColor="#36373B"
+        android:solidColor="#eeeded"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"/>

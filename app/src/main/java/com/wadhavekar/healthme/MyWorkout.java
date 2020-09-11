@@ -1,6 +1,5 @@
 package com.wadhavekar.healthme;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
@@ -8,10 +7,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.GridLayout;
 import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.wadhavekar.healthme.Days.DayFridayWorkout;
+import com.wadhavekar.healthme.Days.DayMondayWorkout;
+import com.wadhavekar.healthme.Days.DaySaturdayWorkout;
+import com.wadhavekar.healthme.Days.DayThursdayWorkout;
+import com.wadhavekar.healthme.Days.DayTuesdayWorkout;
+import com.wadhavekar.healthme.Days.DayWednesdayWorkout;
+import com.wadhavekar.healthme.Pedometer.ped;
+import com.wadhavekar.healthme.WorkoutPackage.Workout;
 
 public class MyWorkout extends AppCompatActivity {
     CardView mon,tue,wed,thu,fri,sat;
@@ -32,7 +38,7 @@ public class MyWorkout extends AppCompatActivity {
         mon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyWorkout.this,DayMondayWorkout.class);
+                Intent intent = new Intent(MyWorkout.this, DayMondayWorkout.class);
                 startActivity(intent);
             }
         });
@@ -40,7 +46,7 @@ public class MyWorkout extends AppCompatActivity {
         tue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyWorkout.this,DayTuesdayWorkout.class);
+                Intent intent = new Intent(MyWorkout.this, DayTuesdayWorkout.class);
                 startActivity(intent);
             }
         });
@@ -48,7 +54,7 @@ public class MyWorkout extends AppCompatActivity {
         wed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyWorkout.this,DayWednesdayWorkout.class);
+                Intent intent = new Intent(MyWorkout.this, DayWednesdayWorkout.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +62,7 @@ public class MyWorkout extends AppCompatActivity {
         thu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyWorkout.this,DayThursdayWorkout.class);
+                Intent intent = new Intent(MyWorkout.this, DayThursdayWorkout.class);
                 startActivity(intent);
             }
         });
@@ -64,14 +70,14 @@ public class MyWorkout extends AppCompatActivity {
         fri.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyWorkout.this,DayFridayWorkout.class);
+                Intent intent = new Intent(MyWorkout.this, DayFridayWorkout.class);
                 startActivity(intent);
             }
         });
         sat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyWorkout.this,DaySaturdayWorkout.class);
+                Intent intent = new Intent(MyWorkout.this, DaySaturdayWorkout.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +88,7 @@ public class MyWorkout extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intenti = new Intent(MyWorkout.this,Workout.class);
+                Intent intenti = new Intent(MyWorkout.this, Workout.class);
                 startActivity(intenti);
             }
         });
@@ -102,7 +108,7 @@ public class MyWorkout extends AppCompatActivity {
                     break;
 
                 case R.id.nav_pedometer:
-                    Intent intent2 = new Intent(MyWorkout.this,ped.class);
+                    Intent intent2 = new Intent(MyWorkout.this, ped.class);
                     startActivity(intent2);
                     break;
 
